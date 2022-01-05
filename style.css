@@ -21,6 +21,8 @@
  .logo{
      width: 240px;
      cursor: pointer;
+     border-radius: 10px;
+
  }
  .navbar ul li{
      list-style: none;
@@ -35,23 +37,54 @@
      font-family: 'Titillium Web', sans-serif;
 
  }
- .navbar ul li::after{
+ /*.navbar ul li::after{
      content: '';
      height: 3px;
      width: 0;
      background: #43a3cf;
      position: absolute;
      left: 0;
-     bottom: -10px;
+     bottom: -5px;
      transition: 0.5s;
- }
+ }*/
+ 
+
 .navbar ul li:hover::after{
     width: 100%;
 }
 
-.content{
-    width: 100%;
+.navbar ul li a{
+    display: block;
+    padding: 0 5px;
+    color: white;
+    text-decoration: none;
+    line-height: 50px;
+}
+
+.navbar ul li a:hover{
+    background: #43a3cf;
+    border-radius: 10px;
+}
+
+.navbar ul ul{
     position: absolute;
+    top: 40px;
+    display: none;
+}
+
+.navbar ul li:hover>ul{
+    display: block;
+}
+
+.navbar ul ul li{
+    width: 150px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+ 
+/*.content{
+    width: 100%;
     top: 50%;
     transform: translateY(-50%);
     text-align: center;
@@ -72,7 +105,16 @@
     font-size: 20px ;
     color:#ffffff ;
 }
-
+*/
+.btn-class{
+    width: 100%;
+    position: absolute;
+    top: 70%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white
+    
+}
 button{
     width: 200px;
     padding: 15px 0;
@@ -83,6 +125,7 @@ button{
     border: 2px solid #43a3cf;
     background: transparent;
     color: #fff;
+    font-size: medium;
     cursor: pointer;
     position: relative;
     overflow: hidden;
@@ -107,4 +150,39 @@ button:hover span{
 }
 button:hover{
     border: none;
+}
+#open-title{
+    font-size: 50px;
+    margin-top: 80px;
+    font-family: 'Titillium Web', sans-serif;
+    color: #ffffff;
+   
+}
+
+#slogan{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    font-size: 20px ;
+    font-family: 'Titillium Web', sans-serif;
+    color: #ffffff;
+
+}
+
+.footer{
+    background-color: rgba(109, 103, 99, 0.418);
+    color: white;
+    text-align: center;
+}
+
+.footer p{
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+}
+
+#underline{
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-thickness: 2px;
+    text-decoration-color: #43a3cf;
 }
